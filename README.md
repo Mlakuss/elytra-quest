@@ -12,7 +12,7 @@ Open your .minecraft folder
 	Linux: Press Alt+F2  
 	Mac: Go in Users/Library/Application Support  
 Go in you saves folder then open a map you want to modify  
-Paste the zip folder into the save folder  
+Paste the zip folder into the datapack folder  
 Play!  
 
 Note:  
