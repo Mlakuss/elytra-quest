@@ -1,0 +1,23 @@
+{	"rewards":{"function":"elytra_quest:new_land"},
+	"requirements":[["find_slime","enter_slime"]],
+    "criteria": {
+		"enter_slime":{
+			"trigger":"minecraft:enter_block",
+			"conditions":{
+				"block":"minecraft:slime_block"
+			}
+		},
+		"find_slime":{
+			"trigger":"minecraft:inventory_changed",
+			"conditions":{
+        "items": [
+          {
+            "items": [
+              "minecraft:slime_block"
+            ]
+          }
+        ]
+      }
+		}
+    }
+}

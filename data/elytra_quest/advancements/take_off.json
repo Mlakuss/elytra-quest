@@ -1,0 +1,25 @@
+{
+	"rewards":{"function":"elytra_quest:take_off"},
+    "display": {
+        "icon": {
+            "item": "minecraft:firework_rocket"
+        },
+        "title": {
+            "translate": "Take off!"
+        },
+        "description": {
+            "translate": "Craft 50 Rockets and 10 TNT"
+        },
+        "show_toast": true,
+        "announce_to_chat": false
+    },
+	"parent":"elytra_quest:root",
+    "criteria": {
+		"find_rockets":{
+			"trigger":"minecraft:impossible"
+		},
+		"find_tnt":{
+			"trigger":"minecraft:impossible"
+		}
+    }
+}

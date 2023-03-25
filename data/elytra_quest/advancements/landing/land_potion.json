@@ -1,0 +1,21 @@
+{	"rewards":{"function":"elytra_quest:new_land"},
+	"requirements":[["use_potion","brew_potion"]],
+    "criteria": {
+		"use_potion":{
+			"trigger":"minecraft:effects_changed",
+			"conditions":{
+				"effects":{"minecraft:slow_falling":{}}
+			}
+		},
+		"brew_potion":{
+			"trigger":"minecraft:inventory_changed",
+			"conditions":{
+        "items": [
+          {
+            "potion": "minecraft:slow_falling"
+          }
+        ]
+      }
+		}
+    }
+}

@@ -1,0 +1,30 @@
+{
+	"rewards":{"function":"elytra_quest:last_step"},
+    "display": {
+        "icon": {
+            "item": "minecraft:chest"
+        },
+        "title": {
+            "translate": "The Collection"
+        },
+        "description": {
+            "translate": "Complete first steps to craft your Elytra"
+        },
+        "show_toast": true,
+        "announce_to_chat": true,
+		"frame":"goal",
+		"hidden":false
+    },
+	"parent":"elytra_quest:gather",
+    "criteria": {
+		"gather_complete":{
+			"trigger":"minecraft:impossible"
+		},
+		"landing_complete":{
+			"trigger":"minecraft:impossible"
+		},
+		"take_off_complete":{
+			"trigger":"minecraft:impossible"
+		}
+    }
+}

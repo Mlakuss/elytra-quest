@@ -1,0 +1,23 @@
+{	"rewards":{"function":"elytra_quest:new_land"},
+	"requirements":[["find_cobweb","enter_cobweb"]],
+    "criteria": {
+		"enter_cobweb":{
+			"trigger":"minecraft:enter_block",
+			"conditions":{
+				"block":"minecraft:cobweb"
+			}
+		},
+		"find_cobweb":{
+			"trigger":"minecraft:inventory_changed",
+			"conditions":{
+			"items": [
+			  {
+				"items": [
+				  "minecraft:cobweb"
+				]
+			  }
+			]
+		  }
+		}
+    }
+}

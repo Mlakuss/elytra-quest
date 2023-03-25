@@ -1,0 +1,54 @@
+{
+	"rewards":{"function":"elytra_quest:start"},
+    "display": {
+        "icon": {
+            "item": "minecraft:elytra"
+        },
+        "title": {
+            "translate": "A Quest For Elytra"
+        },
+        "description": {
+            "translate": "Nothing's better than flying with your own wings"
+        },
+		"background": "minecraft:textures/block/shulker_box.png",
+        "show_toast": true,
+        "announce_to_chat": false
+    },
+	"requirements":[["hight","kill_ender_dragon","tame_parrot","voided","find_membrane"]],
+    "criteria": {
+        "hight": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "location": {
+            "position": {
+              "y": {
+                "min": 128,
+                "max": 256
+              }
+            },
+            "dimension": "minecraft:overworld"
+          }
+        }
+      }
+    },
+		"kill_ender_dragon":{"trigger":"player_killed_entity","conditions":{"entity":{"type":"ender_dragon"}}},
+		"tame_parrot":{"trigger":"minecraft:tame_animal","conditions":{"entity":{"type":"parrot"}}},
+		"find_membrane":{"trigger":"minecraft:inventory_changed","conditions":{"items":[{"item":"minecraft:phantom_membrane"}]}},
+		"voided":{
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "location": {
+            "position": {
+              "y": {
+                "min": -1,
+                "max": 2
+              }
+            }
+          }
+        }
+      }
+    }
+    }
+}

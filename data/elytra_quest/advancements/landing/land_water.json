@@ -1,0 +1,23 @@
+{	"rewards":{"function":"elytra_quest:new_land"},
+	"requirements":[["find_water","enter_water"]],
+    "criteria": {
+		"enter_water":{
+			"trigger":"minecraft:enter_block",
+			"conditions":{
+				"block":"minecraft:water"
+			}
+		},
+		"find_water":{
+			"trigger":"minecraft:inventory_changed",
+			"conditions":{
+			"items": [
+			  {
+				"items": [
+				  "minecraft:water_bucket"
+				]
+			  }
+			]
+		  }
+		}
+    }
+}

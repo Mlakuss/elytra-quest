@@ -1,0 +1,21 @@
+{
+	"rewards":{"function":"elytra_quest:gather_feather"},
+    "criteria": {
+		"started":{"trigger":"minecraft:impossible"},
+		"gather_feather":{"trigger":"minecraft:inventory_changed",
+		"conditions":{
+			"items": [
+			  {
+				"items": [
+				  "minecraft:feather"
+				],
+				"count": {
+				  "min": 64,
+				  "max": 640
+				}
+			  }
+			]
+		  }
+		}
+    }
+}

@@ -1,0 +1,39 @@
+﻿{	"rewards":{"function":"elytra_quest:collect_shells"},
+    "display": {
+        "icon": {
+            "item": "minecraft:shulker_shell"
+        },
+        "title": {
+            "translate": "Upgrade The Prototype"
+        },
+        "description": {
+            "translate": "Collect 4 Shulker Shells\n§9Optionnal§r"
+        },
+        "show_toast": true,
+        "announce_to_chat": false,
+		"hidden":false
+    },
+	"parent":"elytra_quest:start_repair",
+    "criteria": {
+		"shulker_shells":{"trigger":"minecraft:inventory_changed","conditions":{
+			"items": [
+			  {
+				"items": [
+				  "minecraft:elytra"
+				],
+				"nbt": "{RepairCost:99}"
+			  },
+			  {
+				"items": [
+				  "minecraft:shulker_shell"
+				],
+				"count": {
+				  "min": 4,
+				  "max": 64
+				}
+			  }
+			]
+		  }
+		}
+    }
+}

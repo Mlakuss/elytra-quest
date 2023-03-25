@@ -1,0 +1,20 @@
+{	"rewards":{"function":"elytra_quest:gather_complete"},
+    "display": {
+        "icon": {
+            "item": "minecraft:phantom_membrane"
+        },
+        "title": {
+            "translate": "The Gathering"
+        },
+        "description": {
+            "translate": "Collect a stack of leather and feather"
+        },
+        "show_toast": true,
+        "announce_to_chat": false
+    },
+	"parent":"elytra_quest:root",
+    "criteria": {
+		"gather_leather":{"trigger":"minecraft:impossible"},
+		"gather_feather":{"trigger":"minecraft:impossible"}
+    }
+}

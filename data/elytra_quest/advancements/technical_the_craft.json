@@ -1,0 +1,14 @@
+{
+	"rewards":{"function":"elytra_quest:the_craft"},
+	"parent":"elytra_quest:collection_complete",
+    "criteria": {
+		"collection":{"trigger":"minecraft:impossible"},
+		"craft_complete":{
+			"trigger":"minecraft:placed_block",
+			"conditions":{
+				"block":"minecraft:crafting_table",
+				"location":{"dimension":"the_end","feature":"EndCity"}
+			}
+		}
+    }
+}

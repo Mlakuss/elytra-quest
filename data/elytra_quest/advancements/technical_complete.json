@@ -1,0 +1,18 @@
+{
+	"rewards":{"function":"elytra_quest:quest_complete"},
+    "criteria": {
+		"started":{"trigger":"minecraft:impossible"},
+		"dragon_breath_elytra":{"trigger":"minecraft:inventory_changed",
+		"conditions":{
+                "items": [
+					{
+                        "item": "minecraft:phantom_membrane","count":{"min":10}
+                    },
+					{
+						"item": "minecraft:elytra","nbt":"{RepairCost:99}"
+					}
+                ]
+            }
+		}
+    }
+}

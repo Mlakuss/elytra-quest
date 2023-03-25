@@ -1,0 +1,22 @@
+{
+	"rewards":{"function":"elytra_quest:complete"},
+    "display": {
+        "icon": {
+            "item": "minecraft:crafting_table"
+			},
+        "title": {
+            "translate": "The Craft"
+        },
+        "description": {
+            "translate": "Place a crafting table in an End City to craft your elytra"
+        },
+        "show_toast": false,
+        "announce_to_chat": false,
+		"frame":"task",
+		"hidden":false
+    },
+	"parent":"elytra_quest:collection_complete",
+    "criteria": {
+		"craft_completed":{"trigger":"minecraft:impossible"}
+    }
+}

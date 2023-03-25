@@ -1,0 +1,21 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:elytra"
+        },
+        "title": {
+            "translate": "My Elytra"
+        },
+        "description": {
+            "translate": "Finish the repair by collecting 10 Phantom Membranes"
+        },
+        "show_toast": true,
+        "announce_to_chat": true,
+		"frame":"challenge",
+		"hidden":false
+    },
+	"parent":"elytra_quest:start_repair",
+    "criteria": {
+		"complete":{"trigger":"minecraft:impossible"}
+    }
+}

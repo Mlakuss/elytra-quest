@@ -1,0 +1,21 @@
+{
+	"rewards":{"function":"elytra_quest:gather_leather"},
+    "criteria": {
+		"started":{"trigger":"minecraft:impossible"},
+		"gather_leather":{"trigger":"minecraft:inventory_changed",
+		"conditions":{
+			"items": [
+			  {
+				"items": [
+				  "minecraft:leather"
+				],
+				"count": {
+				  "min": 64,
+				  "max": 640
+				}
+			  }
+			]
+		  }
+		}
+    }
+}

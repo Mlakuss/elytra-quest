@@ -1,0 +1,34 @@
+{
+	"rewards":{"recipes":["elytra_quest:elytra"]},
+    "display": {
+        "icon": {
+            "item": "minecraft:knowledge_book"
+        },
+        "title": {
+            "translate": "The Recipe"
+        },
+        "description": {
+            "translate": "Fly with your Elytra to unlock the recipe to craft more!"
+        },
+        "show_toast": true,
+        "announce_to_chat": false,
+		"frame":"task"
+    },
+	"parent":"elytra_quest:quest_complete",
+	"requirements":[["quest_complete"],["use_elytra","known_recipe"]],
+    "criteria": {
+		"quest_complete":{"trigger":"minecraft:impossible"},
+		"known_recipe":{"trigger":"minecraft:recipe_unlocked","conditions":{"recipe":"elytra_quest:elytra"}},
+		"use_elytra":{"trigger":"minecraft:item_durability_changed",
+		"conditions": {
+                "durability": {
+                    "min": 112,
+                    "max": 214
+                },
+                "item": {
+                    "item": "minecraft:elytra"
+                }
+            }
+		}
+    }
+}

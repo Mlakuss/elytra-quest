@@ -1,0 +1,21 @@
+{
+	"rewards":{"function":"elytra_quest:rockets"},
+    "criteria": {
+		"started":{"trigger":"minecraft:impossible"},
+		"find_rockets":{"trigger":"minecraft:inventory_changed",
+		"conditions":{
+			"items": [
+			  {
+				"items": [
+				  "minecraft:firework_rocket"
+				],
+				"count": {
+				  "min": 50,
+				  "max": 500
+				}
+			  }
+			]
+		  }
+		}
+    }
+}

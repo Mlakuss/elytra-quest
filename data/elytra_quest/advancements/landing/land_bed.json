@@ -1,0 +1,15 @@
+{	"rewards":{"function":"elytra_quest:new_land"},
+	"requirements":[["find_bed"]],
+    "criteria": {
+		"find_bed":{
+			"trigger":"minecraft:inventory_changed",
+			"conditions":{
+			"items": [
+			  {
+				"tag": "minecraft:beds"
+			  }
+			]
+		  }
+		}
+    }
+}

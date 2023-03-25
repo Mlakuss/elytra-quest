@@ -1,0 +1,18 @@
+{	"rewards":{"function":"elytra_quest:new_land"},
+    "criteria": {
+		"find_featherfalling":{
+			"trigger":"minecraft:inventory_changed",
+			"conditions":{
+        "items": [
+          {
+            "enchantments": [
+              {
+                "enchantment": "minecraft:feather_falling"
+              }
+            ]
+          }
+        ]
+      }
+		}
+    }
+}

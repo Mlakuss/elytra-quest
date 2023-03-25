@@ -1,0 +1,23 @@
+{	"rewards":{"function":"elytra_quest:new_land"},
+	"requirements":[["find_hay","enter_hay"]],
+    "criteria": {
+		"enter_hay":{
+			"trigger":"minecraft:enter_block",
+			"conditions":{
+				"block":"minecraft:hay_block"
+			}
+		},
+		"find_hay":{
+			"trigger":"minecraft:inventory_changed",
+			"conditions":{
+        "items": [
+          {
+            "items": [
+              "minecraft:hay_block"
+            ]
+          }
+        ]
+      }
+		}
+    }
+}

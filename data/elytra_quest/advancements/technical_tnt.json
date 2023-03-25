@@ -1,0 +1,21 @@
+{
+	"rewards":{"function":"elytra_quest:tnt"},
+    "criteria": {
+		"started":{"trigger":"minecraft:impossible"},
+		"tnt":{"trigger":"minecraft:inventory_changed",
+		"conditions":{
+			"items": [
+			  {
+				"items": [
+				  "minecraft:tnt"
+				],
+				"count": {
+				  "min": 10,
+				  "max": 128
+				}
+			  }
+			]
+		  }
+		}
+    }
+}

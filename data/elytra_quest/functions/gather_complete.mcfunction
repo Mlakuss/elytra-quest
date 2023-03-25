@@ -1,0 +1,1 @@
+advancement grant @s only elytra_quest:collection_complete gather_complete

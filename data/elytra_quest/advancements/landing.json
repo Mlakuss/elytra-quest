@@ -1,0 +1,23 @@
+{	"rewards":{"function":"elytra_quest:landing"},
+    "display": {
+        "icon": {
+            "item": "minecraft:leather_boots"
+        },
+        "title": {
+            "translate": "A Good Landing"
+        },
+        "description": {
+            "translate": "Find different ways to improve your landing"
+        },
+        "show_toast": true,
+        "announce_to_chat": false
+    },
+	"parent":"elytra_quest:root",
+    "criteria": {
+		"1":{"trigger":"minecraft:impossible"},
+		"2":{"trigger":"minecraft:impossible"},
+		"3":{"trigger":"minecraft:impossible"},
+		"4":{"trigger":"minecraft:impossible"},
+		"5":{"trigger":"minecraft:impossible"}
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:anvil"
+        },
+        "title": {
+            "translate": "The Mending"
+        },
+        "description": {
+            "translate": "Your prototype need some repairs"
+        },
+        "show_toast": true,
+        "announce_to_chat": false,
+		"frame":"goal",
+		"hidden":true
+    },
+	"parent":"elytra_quest:the_craft",
+    "criteria": {
+		"no_requirement":{"trigger":"minecraft:impossible"}
+    }
+}
